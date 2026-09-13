@@ -16,8 +16,8 @@ docker images --filter reference='app-*'
 
 ```text
 IMAGE                 ID             DISK USAGE   CONTENT SIZE   EXTRA
-app-events:latest     bc474b942e49        272MB           61MB   U    
-app-gateway:latest    d75628126e9b        251MB         55.7MB   U    
+app-events:latest     bc474b942e49        272MB           61MB   U
+app-gateway:latest    d75628126e9b        251MB         55.7MB   U
 app-payments:latest   813374aa9be9        249MB         55.2MB   U
 ```
 
@@ -247,8 +247,8 @@ docker images --filter reference='app-*'
 
 ```text
 IMAGE                 ID             DISK USAGE   CONTENT SIZE   EXTRA
-app-events:latest     28e4f47f1366        272MB           61MB        
-app-gateway:latest    3dc9c408fcdf        251MB         55.7MB        
+app-events:latest     28e4f47f1366        272MB           61MB
+app-gateway:latest    3dc9c408fcdf        251MB         55.7MB
 app-payments:latest   7b49dddfacd9        249MB         55.2MB
 ```
 
@@ -275,7 +275,7 @@ index c45a68c..3c837e5 100644
 +++ b/app/events/Dockerfile
 @@ -6,4 +6,7 @@ RUN pip install --no-cache-dir -r requirements.txt
  COPY main.py .
- 
+
  EXPOSE 8081
 +RUN addgroup --system app && adduser --system --ingroup app app
 +USER app
@@ -287,7 +287,7 @@ index 68ef075..f4e4173 100644
 +++ b/app/gateway/Dockerfile
 @@ -6,4 +6,7 @@ RUN pip install --no-cache-dir -r requirements.txt
  COPY main.py .
- 
+
  EXPOSE 8080
 +RUN addgroup --system app && adduser --system --ingroup app app
 +USER app
@@ -299,7 +299,7 @@ index 7f9e7c1..0518909 100644
 +++ b/app/payments/Dockerfile
 @@ -6,4 +6,7 @@ RUN pip install --no-cache-dir -r requirements.txt
  COPY main.py .
- 
+
  EXPOSE 8082
 +RUN addgroup --system app && adduser --system --ingroup app app
 +USER app
@@ -331,8 +331,8 @@ docker images --filter reference='app-*'
 
 ```text
 IMAGE                 ID             DISK USAGE   CONTENT SIZE   EXTRA
-app-events:latest     4472dbd53e97        272MB           61MB   U    
-app-gateway:latest    c1580dc94822        251MB         55.7MB   U    
+app-events:latest     4472dbd53e97        272MB           61MB   U
+app-gateway:latest    c1580dc94822        251MB         55.7MB   U
 app-payments:latest   f4be0e365444        249MB         55.2MB   U
 ```
 
@@ -417,9 +417,9 @@ gateway-1   | 2026-09-13T12:38:51.063764762Z INFO:     192.168.65.1:64473 - "POS
 gateway-1   | 2026-09-13T12:38:51.068507846Z {"time":"2026-09-13 12:38:51,068","level":"INFO","service":"gateway","msg":"HTTP Request: POST http://payments:8082/charge "HTTP/1.1 200 OK""}
 gateway-1   | 2026-09-13T12:38:51.072691304Z {"time":"2026-09-13 12:38:51,072","level":"INFO","service":"gateway","msg":"HTTP Request: POST http://events:8081/reservations/432948e2-d843-461c-9b4e-e34fd7ca5626/confirm "HTTP/1.1 200 OK""}
 gateway-1   | 2026-09-13T12:38:51.073215887Z INFO:     192.168.65.1:16396 - "POST /reserve/432948e2-d843-461c-9b4e-e34fd7ca5626/pay HTTP/1.1" 200 OK
-postgres-1  | 2026-09-13T12:38:29.713921919Z 
+postgres-1  | 2026-09-13T12:38:29.713921919Z
 postgres-1  | 2026-09-13T12:38:29.713949086Z PostgreSQL Database directory appears to contain a database; Skipping initialization
-postgres-1  | 2026-09-13T12:38:29.713950836Z 
+postgres-1  | 2026-09-13T12:38:29.713950836Z
 postgres-1  | 2026-09-13T12:38:29.727840627Z 2026-09-13 12:38:29.727 UTC [1] LOG:  starting PostgreSQL 17.11 on aarch64-unknown-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
 postgres-1  | 2026-09-13T12:38:29.727853752Z 2026-09-13 12:38:29.727 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
 postgres-1  | 2026-09-13T12:38:29.727855252Z 2026-09-13 12:38:29.727 UTC [1] LOG:  listening on IPv6 address "::", port 5432
