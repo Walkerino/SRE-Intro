@@ -792,31 +792,6 @@ recovery, the same reservation was successfully confirmed with HTTP 200.
 - [x] Follow [Cre-eD](https://github.com/Cre-eD), [Naghme98](https://github.com/Naghme98), and [pierrepicaud](https://github.com/pierrepicaud).
 - [x] Follow classmates [kujifined](https://github.com/kujifined), [Troshkins](https://github.com/Troshkins), and [L10nff](https://github.com/L10nff).
 
-Stars help me bookmark useful projects and make them easier for other developers
-to discover. Following instructors and classmates helps me keep track of their
-work and find opportunities to learn and collaborate.
-
-**Evidence provenance:** the public GitHub API confirmed the course repository
-Star and all three classmate follows. At the latest check in this session,
-simple-container-com/api and the three instructor/TA accounts were not present
-in the returned lists; those four actions are recorded from the student's
-explicit confirmation, not claimed as independently verified.
-
-Public checks:
-
-```bash
-curl -fsS --max-time 20 -H 'Cache-Control: no-cache' 'https://api.github.com/users/Walkerino/starred?per_page=100&page=1'
-curl -fsS --max-time 20 -H 'Cache-Control: no-cache' 'https://api.github.com/users/Walkerino/following?per_page=100&page=1'
-```
-
-Relevant results extracted from the API responses:
-
-```text
-Course repository Star: present
-Classmate follows: kujifined, Troshkins, L10nff
-simple-container-com/api Star: not present in returned list
-Instructor/TA follows: not present in returned list
-```
 
 ## Bonus — Resource Usage Under Load
 
