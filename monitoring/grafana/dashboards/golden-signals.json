@@ -186,7 +186,13 @@
           ],
           "fields": "",
           "values": false
-        }
+        },
+        "effects": {
+          "gradient": false,
+          "centerGlow": true
+        },
+        "showThresholdLabels": true,
+        "showThresholdMarkers": true
       },
       "fieldConfig": {
         "defaults": {
@@ -245,7 +251,13 @@
           ],
           "fields": "",
           "values": false
-        }
+        },
+        "effects": {
+          "gradient": false,
+          "centerGlow": true
+        },
+        "showThresholdLabels": true,
+        "showThresholdMarkers": true
       },
       "fieldConfig": {
         "defaults": {
