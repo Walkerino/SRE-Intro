@@ -384,3 +384,12 @@ section with their actual feedback. **No bonus points are claimed yet.**
 - [Grafana file provisioning](https://grafana.com/docs/grafana/latest/alerting/set-up/provision-alerting-resources/file-provisioning/)
 - [Grafana 13 API migration](https://grafana.com/whats-new/2026-04-07-legacy-alertmanager-configuration-api-endpoints-changed/)
 - [ArgoCD self-healing](https://argo-cd.readthedocs.io/en/stable/user-guide/auto_sync/)
+
+## Final cleanup
+
+After the critical alert and its resolved notification were captured, the
+Application source was restored to `feature/lab5` and verified Synced/Healthy.
+The load generator was scaled to zero; no fault-injection setting remains.
+The monitoring stack stays available for review. The 30m burn warning retained
+the past incident at cleanup time, as shown in the recorded state; it was not
+silenced or falsely reported as recovered. [Final pods](evidence/lab6/final-pods.txt).
