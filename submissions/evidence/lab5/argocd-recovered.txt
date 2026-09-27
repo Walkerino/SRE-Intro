@@ -14,12 +14,12 @@ Health Status:      Healthy
 
 GROUP  KIND        NAMESPACE  NAME      STATUS  HEALTH   HOOK  MESSAGE
 apps   Deployment  default    gateway   Synced  Healthy        deployment.apps/gateway unchanged
-       Service     default    events    Synced  Healthy        
-       Service     default    gateway   Synced  Healthy        
-       Service     default    payments  Synced  Healthy        
-       Service     default    postgres  Synced  Healthy        
-       Service     default    redis     Synced  Healthy        
-apps   Deployment  default    events    Synced  Healthy        
-apps   Deployment  default    payments  Synced  Healthy        
-apps   Deployment  default    postgres  Synced  Healthy        
-apps   Deployment  default    redis     Synced  Healthy        
+       Service     default    events    Synced  Healthy
+       Service     default    gateway   Synced  Healthy
+       Service     default    payments  Synced  Healthy
+       Service     default    postgres  Synced  Healthy
+       Service     default    redis     Synced  Healthy
+apps   Deployment  default    events    Synced  Healthy
+apps   Deployment  default    payments  Synced  Healthy
+apps   Deployment  default    postgres  Synced  Healthy
+apps   Deployment  default    redis     Synced  Healthy
