@@ -12,10 +12,12 @@ spec:
       labels:
         app: events
     spec:
+      imagePullSecrets:
+      - name: ghcr-secret
       containers:
       - name: events
-        image: quickticket-events:v1
-        imagePullPolicy: Never
+        image: ghcr.io/walkerino/quickticket-events:79a4e6262d004a6e6685c5bca2aca0f4910d61fe
+        imagePullPolicy: Always
         ports:
         - name: tcp
           containerPort: 8081
