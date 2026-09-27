@@ -2,7 +2,10 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: gateway
+  labels:
+    version: v2
 spec:
+  progressDeadlineSeconds: 60
   replicas: 1
   selector:
     matchLabels:
@@ -12,8 +15,6 @@ spec:
       labels:
         app: gateway
     spec:
-      imagePullSecrets:
-      - name: ghcr-secret
       containers:
       - name: gateway
         image: ghcr.io/walkerino/quickticket-gateway:17b2fdb163812e011ade153c83cf598de034a616
