@@ -16,7 +16,7 @@ spec:
       - name: ghcr-secret
       containers:
       - name: gateway
-        image: ghcr.io/walkerino/quickticket-gateway:79a4e6262d004a6e6685c5bca2aca0f4910d61fe
+        image: ghcr.io/walkerino/quickticket-gateway:17b2fdb163812e011ade153c83cf598de034a616
         imagePullPolicy: Always
         ports:
         - name: tcp
