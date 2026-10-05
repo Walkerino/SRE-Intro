@@ -11,4 +11,3 @@ analysistemplate.argoproj.io/gateway-error-rate unchanged (server dry run)
 rollout.argoproj.io/gateway configured (server dry run)
 Checking /etc/prometheus/prometheus.yml
  SUCCESS: /etc/prometheus/prometheus.yml is valid prometheus config file syntax
-

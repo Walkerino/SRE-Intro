@@ -15,8 +15,8 @@ Replicas:
   Available:     5
 
 NAME                                 KIND         STATUS        AGE    INFO
-⟳ gateway                            Rollout      ✔ Healthy     14m    
-├──# revision:6                                                        
+⟳ gateway                            Rollout      ✔ Healthy     14m
+├──# revision:6
 │  ├──⧉ gateway-5b45bc8f9f           ReplicaSet   ✔ Healthy     2m46s  stable
 │  │  ├──□ gateway-5b45bc8f9f-s6z9x  Pod          ✔ Running     2m45s  ready:1/1
 │  │  ├──□ gateway-5b45bc8f9f-q227v  Pod          ✔ Running     40s    ready:1/1
@@ -24,11 +24,11 @@ NAME                                 KIND         STATUS        AGE    INFO
 │  │  ├──□ gateway-5b45bc8f9f-9wnxp  Pod          ✔ Running     11s    ready:1/1
 │  │  └──□ gateway-5b45bc8f9f-4s4tr  Pod          ✔ Running     6s     ready:1/1
 │  └──α gateway-5b45bc8f9f-6-2       AnalysisRun  ✔ Successful  2m20s  ✔ 3
-├──# revision:5                                                        
-│  └──⧉ gateway-76d687d64b           ReplicaSet   • ScaledDown  9m17s  
-├──# revision:4                                                        
-│  └──⧉ gateway-664755f4c4           ReplicaSet   • ScaledDown  11m    
-├──# revision:3                                                        
-│  └──⧉ gateway-57b4b57b58           ReplicaSet   • ScaledDown  9m39s  
-└──# revision:1                                                        
-   └──⧉ gateway-64d67f89fc           ReplicaSet   • ScaledDown  13m    
+├──# revision:5
+│  └──⧉ gateway-76d687d64b           ReplicaSet   • ScaledDown  9m17s
+├──# revision:4
+│  └──⧉ gateway-664755f4c4           ReplicaSet   • ScaledDown  11m
+├──# revision:3
+│  └──⧉ gateway-57b4b57b58           ReplicaSet   • ScaledDown  9m39s
+└──# revision:1
+   └──⧉ gateway-64d67f89fc           ReplicaSet   • ScaledDown  13m

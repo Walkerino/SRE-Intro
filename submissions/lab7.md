@@ -202,3 +202,5 @@ and traffic observations provide the behavioral checks.
 - [x] Task 1: manual canary, traffic split, promotion, bad revision and abort.
 - [x] Task 2: 20/40/60/80/100 strategy, watch output, metrics and Grafana.
 - [x] Bonus: automated success and failure with real measurement values.
+
+Terminal captures have trailing padding removed; measurements and timestamps are unchanged.

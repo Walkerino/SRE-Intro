@@ -32,11 +32,11 @@ Replicas:
   Available:     5
 
 NAME                                 KIND        STATUS     AGE    INFO
-⟳ gateway                            Rollout     ॥ Paused   3m50s  
-├──# revision:2                                                    
+⟳ gateway                            Rollout     ॥ Paused   3m50s
+├──# revision:2
 │  └──⧉ gateway-664755f4c4           ReplicaSet  ✔ Healthy  42s    canary
 │     └──□ gateway-664755f4c4-xnkdj  Pod         ✔ Running  42s    ready:1/1
-└──# revision:1                                                    
+└──# revision:1
    └──⧉ gateway-64d67f89fc           ReplicaSet  ✔ Healthy  3m29s  stable
       ├──□ gateway-64d67f89fc-5tksf  Pod         ✔ Running  3m29s  ready:1/1
       ├──□ gateway-64d67f89fc-b7mtw  Pod         ✔ Running  3m29s  ready:1/1
@@ -2118,13 +2118,13 @@ Replicas:
   Available:     4
 
 NAME                                 KIND        STATUS         AGE    INFO
-⟳ gateway                            Rollout     ◌ Progressing  3m59s  
-├──# revision:2                                                        
+⟳ gateway                            Rollout     ◌ Progressing  3m59s
+├──# revision:2
 │  └──⧉ gateway-664755f4c4           ReplicaSet  ◌ Progressing  51s    canary
 │     ├──□ gateway-664755f4c4-xnkdj  Pod         ✔ Running      51s    ready:1/1
 │     ├──□ gateway-664755f4c4-z7x2f  Pod         ✔ Running      8s     ready:1/1
 │     └──□ gateway-664755f4c4-v5lzf  Pod         ✔ Running      4s     ready:0/1
-└──# revision:1                                                        
+└──# revision:1
    └──⧉ gateway-64d67f89fc           ReplicaSet  ✔ Healthy      3m38s  stable
       ├──□ gateway-64d67f89fc-5tksf  Pod         ✔ Running      3m38s  ready:1/1
       └──□ gateway-64d67f89fc-b7mtw  Pod         ✔ Running      3m38s  ready:1/1
@@ -2146,16 +2146,16 @@ Replicas:
   Available:     5
 
 NAME                                 KIND        STATUS        AGE    INFO
-⟳ gateway                            Rollout     ✔ Healthy     4m41s  
-├──# revision:2                                                       
+⟳ gateway                            Rollout     ✔ Healthy     4m41s
+├──# revision:2
 │  └──⧉ gateway-664755f4c4           ReplicaSet  ✔ Healthy     93s    stable
 │     ├──□ gateway-664755f4c4-xnkdj  Pod         ✔ Running     93s    ready:1/1
 │     ├──□ gateway-664755f4c4-z7x2f  Pod         ✔ Running     50s    ready:1/1
 │     ├──□ gateway-664755f4c4-v5lzf  Pod         ✔ Running     46s    ready:1/1
 │     ├──□ gateway-664755f4c4-v2j4l  Pod         ✔ Running     11s    ready:1/1
 │     └──□ gateway-664755f4c4-h2kr6  Pod         ✔ Running     7s     ready:1/1
-└──# revision:1                                                       
-   └──⧉ gateway-64d67f89fc           ReplicaSet  • ScaledDown  4m20s  
+└──# revision:1
+   └──⧉ gateway-64d67f89fc           ReplicaSet  • ScaledDown  4m20s
 
 $ kubectl apply -f k8s/gateway.yaml
 rollout.argoproj.io/gateway configured
@@ -2179,18 +2179,18 @@ Replicas:
   Available:     5
 
 NAME                                 KIND        STATUS        AGE    INFO
-⟳ gateway                            Rollout     ॥ Paused      4m58s  
-├──# revision:3                                                       
+⟳ gateway                            Rollout     ॥ Paused      4m58s
+├──# revision:3
 │  └──⧉ gateway-57b4b57b58           ReplicaSet  ✔ Healthy     17s    canary
 │     └──□ gateway-57b4b57b58-q65ww  Pod         ✔ Running     17s    ready:1/1
-├──# revision:2                                                       
+├──# revision:2
 │  └──⧉ gateway-664755f4c4           ReplicaSet  ✔ Healthy     110s   stable
 │     ├──□ gateway-664755f4c4-xnkdj  Pod         ✔ Running     110s   ready:1/1
 │     ├──□ gateway-664755f4c4-z7x2f  Pod         ✔ Running     67s    ready:1/1
 │     ├──□ gateway-664755f4c4-v5lzf  Pod         ✔ Running     63s    ready:1/1
 │     └──□ gateway-664755f4c4-v2j4l  Pod         ✔ Running     28s    ready:1/1
-└──# revision:1                                                       
-   └──⧉ gateway-64d67f89fc           ReplicaSet  • ScaledDown  4m37s  
+└──# revision:1
+   └──⧉ gateway-64d67f89fc           ReplicaSet  • ScaledDown  4m37s
 
 $ kubectl argo rollouts abort gateway
 rollout 'gateway' aborted
@@ -2213,18 +2213,18 @@ Replicas:
   Available:     4
 
 NAME                                 KIND        STATUS         AGE    INFO
-⟳ gateway                            Rollout     ✖ Degraded     5m     
-├──# revision:3                                                        
+⟳ gateway                            Rollout     ✖ Degraded     5m
+├──# revision:3
 │  └──⧉ gateway-57b4b57b58           ReplicaSet  • ScaledDown   19s    canary
-├──# revision:2                                                        
+├──# revision:2
 │  └──⧉ gateway-664755f4c4           ReplicaSet  ◌ Progressing  112s   stable
 │     ├──□ gateway-664755f4c4-xnkdj  Pod         ✔ Running      112s   ready:1/1
 │     ├──□ gateway-664755f4c4-z7x2f  Pod         ✔ Running      69s    ready:1/1
 │     ├──□ gateway-664755f4c4-v5lzf  Pod         ✔ Running      65s    ready:1/1
 │     ├──□ gateway-664755f4c4-v2j4l  Pod         ✔ Running      30s    ready:1/1
 │     └──□ gateway-664755f4c4-dg7lm  Pod         ✔ Running      2s     ready:0/1
-└──# revision:1                                                        
-   └──⧉ gateway-64d67f89fc           ReplicaSet  • ScaledDown   4m39s  
+└──# revision:1
+   └──⧉ gateway-64d67f89fc           ReplicaSet  • ScaledDown   4m39s
 
 $ kubectl apply -f k8s/gateway.yaml
 rollout.argoproj.io/gateway configured
@@ -2252,20 +2252,20 @@ Replicas:
   Available:     5
 
 NAME                                 KIND        STATUS        AGE    INFO
-⟳ gateway                            Rollout     ॥ Paused      5m28s  
-├──# revision:5                                                       
+⟳ gateway                            Rollout     ॥ Paused      5m28s
+├──# revision:5
 │  └──⧉ gateway-76d687d64b           ReplicaSet  ✔ Healthy     25s    canary
 │     └──□ gateway-76d687d64b-lp28t  Pod         ✔ Running     25s    ready:1/1
-├──# revision:4                                                       
+├──# revision:4
 │  └──⧉ gateway-664755f4c4           ReplicaSet  ✔ Healthy     2m20s  stable
 │     ├──□ gateway-664755f4c4-xnkdj  Pod         ✔ Running     2m20s  ready:1/1
 │     ├──□ gateway-664755f4c4-z7x2f  Pod         ✔ Running     97s    ready:1/1
 │     ├──□ gateway-664755f4c4-v5lzf  Pod         ✔ Running     93s    ready:1/1
 │     └──□ gateway-664755f4c4-v2j4l  Pod         ✔ Running     58s    ready:1/1
-├──# revision:3                                                       
-│  └──⧉ gateway-57b4b57b58           ReplicaSet  • ScaledDown  47s    
-└──# revision:1                                                       
-   └──⧉ gateway-64d67f89fc           ReplicaSet  • ScaledDown  5m7s   
+├──# revision:3
+│  └──⧉ gateway-57b4b57b58           ReplicaSet  • ScaledDown  47s
+└──# revision:1
+   └──⧉ gateway-64d67f89fc           ReplicaSet  • ScaledDown  5m7s
 
 $ kubectl argo rollouts get rollout gateway --no-color
 Name:            gateway
@@ -2285,20 +2285,20 @@ Replicas:
   Available:     5
 
 NAME                                 KIND        STATUS        AGE    INFO
-⟳ gateway                            Rollout     ॥ Paused      6m38s  
-├──# revision:5                                                       
+⟳ gateway                            Rollout     ॥ Paused      6m38s
+├──# revision:5
 │  └──⧉ gateway-76d687d64b           ReplicaSet  ✔ Healthy     95s    canary
 │     ├──□ gateway-76d687d64b-lp28t  Pod         ✔ Running     95s    ready:1/1
 │     └──□ gateway-76d687d64b-xfbmw  Pod         ✔ Running     26s    ready:1/1
-├──# revision:4                                                       
+├──# revision:4
 │  └──⧉ gateway-664755f4c4           ReplicaSet  ✔ Healthy     3m30s  stable
 │     ├──□ gateway-664755f4c4-xnkdj  Pod         ✔ Running     3m30s  ready:1/1
 │     ├──□ gateway-664755f4c4-z7x2f  Pod         ✔ Running     2m47s  ready:1/1
 │     └──□ gateway-664755f4c4-v2j4l  Pod         ✔ Running     2m8s   ready:1/1
-├──# revision:3                                                       
-│  └──⧉ gateway-57b4b57b58           ReplicaSet  • ScaledDown  117s   
-└──# revision:1                                                       
-   └──⧉ gateway-64d67f89fc           ReplicaSet  • ScaledDown  6m17s  
+├──# revision:3
+│  └──⧉ gateway-57b4b57b58           ReplicaSet  • ScaledDown  117s
+└──# revision:1
+   └──⧉ gateway-64d67f89fc           ReplicaSet  • ScaledDown  6m17s
 
 $ kubectl argo rollouts get rollout gateway --no-color
 Name:            gateway
@@ -2318,20 +2318,20 @@ Replicas:
   Available:     5
 
 NAME                                 KIND        STATUS        AGE    INFO
-⟳ gateway                            Rollout     ॥ Paused      7m43s  
-├──# revision:5                                                       
+⟳ gateway                            Rollout     ॥ Paused      7m43s
+├──# revision:5
 │  └──⧉ gateway-76d687d64b           ReplicaSet  ✔ Healthy     2m40s  canary
 │     ├──□ gateway-76d687d64b-lp28t  Pod         ✔ Running     2m40s  ready:1/1
 │     ├──□ gateway-76d687d64b-xfbmw  Pod         ✔ Running     91s    ready:1/1
 │     └──□ gateway-76d687d64b-6zzgm  Pod         ✔ Running     22s    ready:1/1
-├──# revision:4                                                       
+├──# revision:4
 │  └──⧉ gateway-664755f4c4           ReplicaSet  ✔ Healthy     4m35s  stable
 │     ├──□ gateway-664755f4c4-xnkdj  Pod         ✔ Running     4m35s  ready:1/1
 │     └──□ gateway-664755f4c4-z7x2f  Pod         ✔ Running     3m52s  ready:1/1
-├──# revision:3                                                       
-│  └──⧉ gateway-57b4b57b58           ReplicaSet  • ScaledDown  3m2s   
-└──# revision:1                                                       
-   └──⧉ gateway-64d67f89fc           ReplicaSet  • ScaledDown  7m22s  
+├──# revision:3
+│  └──⧉ gateway-57b4b57b58           ReplicaSet  • ScaledDown  3m2s
+└──# revision:1
+   └──⧉ gateway-64d67f89fc           ReplicaSet  • ScaledDown  7m22s
 
 $ kubectl argo rollouts get rollout gateway --no-color
 Name:            gateway
@@ -2351,20 +2351,20 @@ Replicas:
   Available:     5
 
 NAME                                 KIND        STATUS        AGE    INFO
-⟳ gateway                            Rollout     ॥ Paused      11m    
-├──# revision:5                                                       
+⟳ gateway                            Rollout     ॥ Paused      11m
+├──# revision:5
 │  └──⧉ gateway-76d687d64b           ReplicaSet  ✔ Healthy     6m12s  canary
 │     ├──□ gateway-76d687d64b-lp28t  Pod         ✔ Running     6m12s  ready:1/1
 │     ├──□ gateway-76d687d64b-xfbmw  Pod         ✔ Running     5m3s   ready:1/1
 │     ├──□ gateway-76d687d64b-6zzgm  Pod         ✔ Running     3m54s  ready:1/1
 │     └──□ gateway-76d687d64b-64rtz  Pod         ✔ Running     2m50s  ready:1/1
-├──# revision:4                                                       
+├──# revision:4
 │  └──⧉ gateway-664755f4c4           ReplicaSet  ✔ Healthy     8m7s   stable
 │     └──□ gateway-664755f4c4-z7x2f  Pod         ✔ Running     7m24s  ready:1/1
-├──# revision:3                                                       
-│  └──⧉ gateway-57b4b57b58           ReplicaSet  • ScaledDown  6m34s  
-└──# revision:1                                                       
-   └──⧉ gateway-64d67f89fc           ReplicaSet  • ScaledDown  10m    
+├──# revision:3
+│  └──⧉ gateway-57b4b57b58           ReplicaSet  • ScaledDown  6m34s
+└──# revision:1
+   └──⧉ gateway-64d67f89fc           ReplicaSet  • ScaledDown  10m
 
 $ kubectl argo rollouts get rollout gateway --no-color
 Name:            gateway
@@ -2383,20 +2383,20 @@ Replicas:
   Available:     5
 
 NAME                                 KIND        STATUS        AGE    INFO
-⟳ gateway                            Rollout     ✔ Healthy     11m    
-├──# revision:5                                                       
+⟳ gateway                            Rollout     ✔ Healthy     11m
+├──# revision:5
 │  └──⧉ gateway-76d687d64b           ReplicaSet  ✔ Healthy     6m31s  stable
 │     ├──□ gateway-76d687d64b-lp28t  Pod         ✔ Running     6m31s  ready:1/1
 │     ├──□ gateway-76d687d64b-xfbmw  Pod         ✔ Running     5m22s  ready:1/1
 │     ├──□ gateway-76d687d64b-6zzgm  Pod         ✔ Running     4m13s  ready:1/1
 │     ├──□ gateway-76d687d64b-64rtz  Pod         ✔ Running     3m9s   ready:1/1
 │     └──□ gateway-76d687d64b-dl2pq  Pod         ✔ Running     5s     ready:1/1
-├──# revision:4                                                       
-│  └──⧉ gateway-664755f4c4           ReplicaSet  • ScaledDown  8m26s  
-├──# revision:3                                                       
-│  └──⧉ gateway-57b4b57b58           ReplicaSet  • ScaledDown  6m53s  
-└──# revision:1                                                       
-   └──⧉ gateway-64d67f89fc           ReplicaSet  • ScaledDown  11m    
+├──# revision:4
+│  └──⧉ gateway-664755f4c4           ReplicaSet  • ScaledDown  8m26s
+├──# revision:3
+│  └──⧉ gateway-57b4b57b58           ReplicaSet  • ScaledDown  6m53s
+└──# revision:1
+   └──⧉ gateway-64d67f89fc           ReplicaSet  • ScaledDown  11m
 
 $ kubectl apply -f k8s/gateway.yaml
 rollout.argoproj.io/gateway configured
@@ -2419,8 +2419,8 @@ Replicas:
   Available:     5
 
 NAME                                 KIND         STATUS        AGE    INFO
-⟳ gateway                            Rollout      ✔ Healthy     14m    
-├──# revision:6                                                        
+⟳ gateway                            Rollout      ✔ Healthy     14m
+├──# revision:6
 │  ├──⧉ gateway-5b45bc8f9f           ReplicaSet   ✔ Healthy     2m46s  stable
 │  │  ├──□ gateway-5b45bc8f9f-s6z9x  Pod          ✔ Running     2m45s  ready:1/1
 │  │  ├──□ gateway-5b45bc8f9f-q227v  Pod          ✔ Running     40s    ready:1/1
@@ -2428,14 +2428,14 @@ NAME                                 KIND         STATUS        AGE    INFO
 │  │  ├──□ gateway-5b45bc8f9f-9wnxp  Pod          ✔ Running     11s    ready:1/1
 │  │  └──□ gateway-5b45bc8f9f-4s4tr  Pod          ✔ Running     6s     ready:1/1
 │  └──α gateway-5b45bc8f9f-6-2       AnalysisRun  ✔ Successful  2m20s  ✔ 3
-├──# revision:5                                                        
-│  └──⧉ gateway-76d687d64b           ReplicaSet   • ScaledDown  9m17s  
-├──# revision:4                                                        
-│  └──⧉ gateway-664755f4c4           ReplicaSet   • ScaledDown  11m    
-├──# revision:3                                                        
-│  └──⧉ gateway-57b4b57b58           ReplicaSet   • ScaledDown  9m39s  
-└──# revision:1                                                        
-   └──⧉ gateway-64d67f89fc           ReplicaSet   • ScaledDown  13m    
+├──# revision:5
+│  └──⧉ gateway-76d687d64b           ReplicaSet   • ScaledDown  9m17s
+├──# revision:4
+│  └──⧉ gateway-664755f4c4           ReplicaSet   • ScaledDown  11m
+├──# revision:3
+│  └──⧉ gateway-57b4b57b58           ReplicaSet   • ScaledDown  9m39s
+└──# revision:1
+   └──⧉ gateway-64d67f89fc           ReplicaSet   • ScaledDown  13m
 
 $ kubectl get analysisrun -o yaml
 apiVersion: v1
@@ -2548,11 +2548,11 @@ Replicas:
   Available:     4
 
 NAME                                 KIND         STATUS               AGE    INFO
-⟳ gateway                            Rollout      ✖ Degraded           16m    
-├──# revision:7                                                               
+⟳ gateway                            Rollout      ✖ Degraded           16m
+├──# revision:7
 │  ├──⧉ gateway-8567c9fdbf           ReplicaSet   • ScaledDown         105s   canary
 │  └──α gateway-8567c9fdbf-7-2       AnalysisRun  ✖ Failed             81s    ✖ 2
-├──# revision:6                                                               
+├──# revision:6
 │  ├──⧉ gateway-5b45bc8f9f           ReplicaSet   ◌ Progressing        4m32s  stable
 │  │  ├──□ gateway-5b45bc8f9f-s6z9x  Pod          ✔ Running            4m31s  ready:1/1
 │  │  ├──□ gateway-5b45bc8f9f-q227v  Pod          ✔ Running            2m26s  ready:1/1
@@ -2560,14 +2560,14 @@ NAME                                 KIND         STATUS               AGE    IN
 │  │  ├──□ gateway-5b45bc8f9f-9wnxp  Pod          ✔ Running            117s   ready:1/1
 │  │  └──□ gateway-5b45bc8f9f-ctq5c  Pod          ◌ ContainerCreating  1s     ready:0/1
 │  └──α gateway-5b45bc8f9f-6-2       AnalysisRun  ✔ Successful         4m6s   ✔ 3
-├──# revision:5                                                               
-│  └──⧉ gateway-76d687d64b           ReplicaSet   • ScaledDown         11m    
-├──# revision:4                                                               
-│  └──⧉ gateway-664755f4c4           ReplicaSet   • ScaledDown         12m    
-├──# revision:3                                                               
-│  └──⧉ gateway-57b4b57b58           ReplicaSet   • ScaledDown         11m    
-└──# revision:1                                                               
-   └──⧉ gateway-64d67f89fc           ReplicaSet   • ScaledDown         15m    
+├──# revision:5
+│  └──⧉ gateway-76d687d64b           ReplicaSet   • ScaledDown         11m
+├──# revision:4
+│  └──⧉ gateway-664755f4c4           ReplicaSet   • ScaledDown         12m
+├──# revision:3
+│  └──⧉ gateway-57b4b57b58           ReplicaSet   • ScaledDown         11m
+└──# revision:1
+   └──⧉ gateway-64d67f89fc           ReplicaSet   • ScaledDown         15m
 
 $ kubectl get analysisrun -o yaml
 apiVersion: v1
@@ -2765,25 +2765,24 @@ Replicas:
   Available:     5
 
 NAME                                 KIND         STATUS        AGE    INFO
-⟳ gateway                            Rollout      ✔ Healthy     16m    
-├──# revision:8                                                        
+⟳ gateway                            Rollout      ✔ Healthy     16m
+├──# revision:8
 │  └──⧉ gateway-5b45bc8f9f           ReplicaSet   ✔ Healthy     4m37s  stable
 │     ├──□ gateway-5b45bc8f9f-s6z9x  Pod          ✔ Running     4m36s  ready:1/1
 │     ├──□ gateway-5b45bc8f9f-q227v  Pod          ✔ Running     2m31s  ready:1/1
 │     ├──□ gateway-5b45bc8f9f-z4ffg  Pod          ✔ Running     2m26s  ready:1/1
 │     ├──□ gateway-5b45bc8f9f-9wnxp  Pod          ✔ Running     2m2s   ready:1/1
 │     └──□ gateway-5b45bc8f9f-ctq5c  Pod          ✔ Running     6s     ready:1/1
-├──# revision:7                                                        
-│  ├──⧉ gateway-8567c9fdbf           ReplicaSet   • ScaledDown  110s   
+├──# revision:7
+│  ├──⧉ gateway-8567c9fdbf           ReplicaSet   • ScaledDown  110s
 │  └──α gateway-8567c9fdbf-7-2       AnalysisRun  ✖ Failed      86s    ✖ 2
-├──# revision:6                                                        
+├──# revision:6
 │  └──α gateway-5b45bc8f9f-6-2       AnalysisRun  ✔ Successful  4m11s  ✔ 3
-├──# revision:5                                                        
-│  └──⧉ gateway-76d687d64b           ReplicaSet   • ScaledDown  11m    
-├──# revision:4                                                        
-│  └──⧉ gateway-664755f4c4           ReplicaSet   • ScaledDown  13m    
-├──# revision:3                                                        
-│  └──⧉ gateway-57b4b57b58           ReplicaSet   • ScaledDown  11m    
-└──# revision:1                                                        
-   └──⧉ gateway-64d67f89fc           ReplicaSet   • ScaledDown  15m    
-
+├──# revision:5
+│  └──⧉ gateway-76d687d64b           ReplicaSet   • ScaledDown  11m
+├──# revision:4
+│  └──⧉ gateway-664755f4c4           ReplicaSet   • ScaledDown  13m
+├──# revision:3
+│  └──⧉ gateway-57b4b57b58           ReplicaSet   • ScaledDown  11m
+└──# revision:1
+   └──⧉ gateway-64d67f89fc           ReplicaSet   • ScaledDown  15m

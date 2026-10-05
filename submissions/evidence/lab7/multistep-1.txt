@@ -16,17 +16,17 @@ Replicas:
   Available:     5
 
 NAME                                 KIND        STATUS        AGE    INFO
-⟳ gateway                            Rollout     ॥ Paused      5m28s  
-├──# revision:5                                                       
+⟳ gateway                            Rollout     ॥ Paused      5m28s
+├──# revision:5
 │  └──⧉ gateway-76d687d64b           ReplicaSet  ✔ Healthy     25s    canary
 │     └──□ gateway-76d687d64b-lp28t  Pod         ✔ Running     25s    ready:1/1
-├──# revision:4                                                       
+├──# revision:4
 │  └──⧉ gateway-664755f4c4           ReplicaSet  ✔ Healthy     2m20s  stable
 │     ├──□ gateway-664755f4c4-xnkdj  Pod         ✔ Running     2m20s  ready:1/1
 │     ├──□ gateway-664755f4c4-z7x2f  Pod         ✔ Running     97s    ready:1/1
 │     ├──□ gateway-664755f4c4-v5lzf  Pod         ✔ Running     93s    ready:1/1
 │     └──□ gateway-664755f4c4-v2j4l  Pod         ✔ Running     58s    ready:1/1
-├──# revision:3                                                       
-│  └──⧉ gateway-57b4b57b58           ReplicaSet  • ScaledDown  47s    
-└──# revision:1                                                       
-   └──⧉ gateway-64d67f89fc           ReplicaSet  • ScaledDown  5m7s   
+├──# revision:3
+│  └──⧉ gateway-57b4b57b58           ReplicaSet  • ScaledDown  47s
+└──# revision:1
+   └──⧉ gateway-64d67f89fc           ReplicaSet  • ScaledDown  5m7s

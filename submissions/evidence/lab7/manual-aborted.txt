@@ -16,15 +16,15 @@ Replicas:
   Available:     4
 
 NAME                                 KIND        STATUS         AGE    INFO
-⟳ gateway                            Rollout     ✖ Degraded     5m     
-├──# revision:3                                                        
+⟳ gateway                            Rollout     ✖ Degraded     5m
+├──# revision:3
 │  └──⧉ gateway-57b4b57b58           ReplicaSet  • ScaledDown   19s    canary
-├──# revision:2                                                        
+├──# revision:2
 │  └──⧉ gateway-664755f4c4           ReplicaSet  ◌ Progressing  112s   stable
 │     ├──□ gateway-664755f4c4-xnkdj  Pod         ✔ Running      112s   ready:1/1
 │     ├──□ gateway-664755f4c4-z7x2f  Pod         ✔ Running      69s    ready:1/1
 │     ├──□ gateway-664755f4c4-v5lzf  Pod         ✔ Running      65s    ready:1/1
 │     ├──□ gateway-664755f4c4-v2j4l  Pod         ✔ Running      30s    ready:1/1
 │     └──□ gateway-664755f4c4-dg7lm  Pod         ✔ Running      2s     ready:0/1
-└──# revision:1                                                        
-   └──⧉ gateway-64d67f89fc           ReplicaSet  • ScaledDown   4m39s  
+└──# revision:1
+   └──⧉ gateway-64d67f89fc           ReplicaSet  • ScaledDown   4m39s

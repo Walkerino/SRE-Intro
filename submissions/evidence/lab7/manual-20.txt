@@ -16,11 +16,11 @@ Replicas:
   Available:     5
 
 NAME                                 KIND        STATUS     AGE    INFO
-⟳ gateway                            Rollout     ॥ Paused   3m50s  
-├──# revision:2                                                    
+⟳ gateway                            Rollout     ॥ Paused   3m50s
+├──# revision:2
 │  └──⧉ gateway-664755f4c4           ReplicaSet  ✔ Healthy  42s    canary
 │     └──□ gateway-664755f4c4-xnkdj  Pod         ✔ Running  42s    ready:1/1
-└──# revision:1                                                    
+└──# revision:1
    └──⧉ gateway-64d67f89fc           ReplicaSet  ✔ Healthy  3m29s  stable
       ├──□ gateway-64d67f89fc-5tksf  Pod         ✔ Running  3m29s  ready:1/1
       ├──□ gateway-64d67f89fc-b7mtw  Pod         ✔ Running  3m29s  ready:1/1
